@@ -1,0 +1,25 @@
+npm i -g @nestjs/cli
+
+nest new tasks(nome do projeto)
+
+"entidades/tabelas
+nest g res task 
+nest g res users 
+nest g res auth /  nest generate guard auth
+nest generate module db
+
+
+"adicionais
+npm install @nestjs/config
+npm install bcrypt
+npm install -D @types/bcrypt
+npm install @nestjs/jwt
+npm install class-validator
+npm install class-transformer
+npm i typeorm
+npm i pg
+
+"migration configuradas no 'package.json'
+npm run migration:create -name=task-table
+npm run migration:create -name=user-table
+npm run migration:run
