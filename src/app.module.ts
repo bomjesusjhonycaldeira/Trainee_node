@@ -11,7 +11,7 @@ import { DbModule } from './db/db.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    TaskModule, UsersModule, AuthModule, DbModule
+    DbModule, UsersModule, AuthModule, TaskModule
   ],
   controllers: [AppController],
   providers: [AppService],

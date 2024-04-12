@@ -13,7 +13,7 @@ export class UsersService {
   ) {}
 
   async create(newUser: UserDto): Promise<CreateUserResponse> {
-    // verifica se já foi gravado
+    // verifica se já existe
     const userAlreadyRegistered = await this.findByUserName(newUser.username);
 
     if (userAlreadyRegistered) {
@@ -45,4 +45,12 @@ export class UsersService {
       password: userFound.passwordHash,
     };
   }
+
+  async findAll() {
+  return await this.usersRepository.find();     
+  }
+
+  async remove(id :string) {
+    return await this.usersRepository.delete(id);     
+    }
 }

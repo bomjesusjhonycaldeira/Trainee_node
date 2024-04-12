@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
+// Configurações vindas do .ENV
 @Module({
   imports: [
     TypeOrmModule.forRootAsync({

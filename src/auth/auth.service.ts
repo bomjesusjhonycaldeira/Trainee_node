@@ -4,7 +4,6 @@ import { UsersService } from 'src/users/users.service';
 import { AuthResponseDto } from './auth.dto';
 import { compareSync } from 'bcrypt';
 import { ConfigService } from '@nestjs/config';
-import { promises } from 'dns';
 
 @Injectable()
 export class AuthService {
